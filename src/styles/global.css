@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{font-family: 'Montserrat', sans-serif;}
+.header{background:#3B4046;height:80px;color:#fff;line-height:80px;}
+
+.footer{height:80px;background:#5497B0;color:#fff;line-height:80px;text-align:center;font-weight:bold;margin-top:50px} 
+.my-body{width:80%;}
+.layout h1{text-align:center;margin-top:20px;}
+.header .container{font-weight:bold;}
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #5497B0;
+    width: 30%;
+     height: 486px; 
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: #fff;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    text-transform:uppercase;
+    
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab-icon:hover {
+    background-color: #22282F;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab-icon.active {
+    background-color: #22282F;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+   
+    background:#22282F;
+    color:#fff;
+    
+  }
+
+  .tab-icon{display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    width: 95%;
+    margin: auto;}
+    .tab-icon img{padding-left:20px}
+    .icon-image{width:30%;}
+
+    .tab .tab-icon:last-child{border-bottom: none;}
+    .my-body p {font-size:20px;font-weight:bold}
+    .my-body p span{margin-left:10px}
+    .titles{text-align:center;}
+    .content-headings{text-align:center;padding-top:30px;}
+    h3{font-size:35px;margin-bottom:-5px}
+    .layout .box{display:flex;padding-left:35px}
+    .layout .box div:last-child{margin-right:-100px;padding:0 40px;}
+    .layout .box div:first-child{padding:20px 0 0 10px;}
+    .tabcontent{display:none;} 
+    .tabcontent-active{display:block;background:#22282F;color:#fff;height:486px;}
+   .underLine{ width: 360px;
+    height: 01px;
+    background: #fff;
+    
+    margin: auto;
+    padding-left: 34px;
+    display: inline-block;}
+
+    .butons{
+      position: relative;
+    bottom: 20px;
+    
+    text-align: center;
+    }
+
+      .butons a {text-decoration:none}
+      .butons a:first-child{color: #fff;
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        margin-right: 20px;}
+
+        .butons a:last-child{color: #fff;
+          border: 1px solid #fff;
+          padding: 10px 20px;
+          border-radius: 25px;
+          margin-right: 20px;
+        background:#CE2424;}
+        .layout .my-image{width:19rem;}
+
+    /********Accordian CSS***********/
+        .panel.animated .box .my-image{width:15rem;}
+        .accordion {
+          background-color: #5497B0;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          text-align: left;
+          border: none;
+          outline: none;
+          transition: 0.4s;
+          
+        }
+        
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .accordionTab:hover {
+          background-color: #ccc;
+        }
+        
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+          padding: 0 18px;
+          background-color: #22282F;
+          
+          overflow: hidden; 
+          color:#fff;
+          max-width:767px;
+          margin:auto;
+         
+        }
+
+        .accordion:after {
+          content: '\02795'; /* Unicode character for "plus" sign (+) */
+          font-size: 13px;
+          color: #fff;
+          float: right;
+          margin-left: 5px;
+        }
+        
+        .active:after {
+          content: "\2796"; /* Unicode character for "minus" sign (-) */
+        }
+
+        .accordianTab{background:#5497B0;display:flex;margin:auto;align-items:center;justify-content:center;max-width: 1044px;
+          border-bottom: 1px solid #fff;max-width:767px;padding-left: 30px;
+          }
+        .accordianTab img{object-fit:contain}
+        .accordianImage{width:75px;}
+
+        .panel{height:0;opacity:0;}
+        .animated{height:auto;opacity:1}
+        .panel .box div:last-child {
+          margin-right: 0px; 
+          padding: 0px 40px;
+      }
+
+      .accordianTab button{text-transform:uppercase;color:#fff;}
+      .panel.animated .box img{float:right;}
+      .panel.animated .box{padding-bottom: 100px;}
+
+      @media (max-width: 1280px){
+        .my-body{width:100%;}
+        .layout .box div:last-child {margin-right:0;}
+        .layout .box div:first-child {
+           padding: 0px 0 0 0px; 
+           font-size:14px;
+      }
+        .butons {
+          position: relative;
+          bottom: 20px;
+          text-align: center;
+      }
+      .butons a{font-size:12px;position: relative;bottom: 25px;left: -78px;}
+     .tabcontent-active{display:block;background:#22282F;color:#fff;width:100%;margin:auto}
+       
+  }
+     
+body{padding-bottom:100px;min-height:100vh;}
+
+      footer{position:fixed;bottom:0;width:100%;}
+      .accordianTab .accordianImage{width:100px;}
+      @media (max-width: 1080px){
+        .layout{display:none}
+        .myAccordian{display:block}
+        header{margin-bottom:50px;}
+         .my-body{margin-top:100px;} 
+         .butons a{font-size:12px;position:unset;
+          bottom: 25px;}
+          
+          
+      }
+
+
+      @media (min-width: 1080px){
+        .myAccordian{display:none;}
+       
+
+      }
+
+      @media (max-width: 767px){
+        .panel.animated .box img{max-width:200px;height:auto;}
+        .panel.animated .box {padding-bottom:50px;}
+        .butons{padding-bottom:20px;}
+        h3{font-size:30px;}
+        .my-body p {
+          font-size: 15px;
+          font-weight: bold;
+      }
+
+      .panel .box div:last-child {
+        margin-right: 0px;
+        padding: 0px 00px;
+    }
+      
+        
+       
+
+      }
+      
+      
